@@ -1,12 +1,11 @@
 img{
     width: 240px;
     height: 90%;
-
+    border-radius: 50%;
 }
 
 .pizzaCard{
     display: flex;
-    gap:20px
 }
 
 h4{
@@ -19,14 +18,14 @@ ul{
     list-style: none;
     text-align: left;
     position: relative;
+    top: 31px;
 }
-
 p{
     font-size: 12px;
 }
 .price{
     position: absolute;
-    bottom: 70px;
+    bottom: 100px;
     font-weight: bold;
 }
 .price p{
@@ -34,5 +33,5 @@ p{
 }
 .lastBtn{
     position: absolute;
-    bottom: 8px;
+    bottom: 60px;
 }
