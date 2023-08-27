@@ -1,0 +1,18 @@
+
+.acccordion {
+    background: #e3e3e3;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.acccordion span{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.acccordion .content{
+    font-size: 14px;
+}

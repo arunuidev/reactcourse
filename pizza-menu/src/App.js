@@ -2,6 +2,9 @@ import './App.css';
 import Pizza from './Pizza';
 import FlashCard from './FlashCard';
 import Connector from './Connector';
+import Accordion from './Accordion';
+import FriendList from './FriendList';
+
 const pizzaData = [
   {
     name: "Focaccia",
@@ -81,6 +84,23 @@ const questions = [
   }
 ];
 
+const faqs = [
+  {
+    title: "Where are these chairs assembled?",
+    text:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, quaerat temporibus quas dolore provident nisi ut aliquid ratione beatae sequi aspernatur veniam repellendus."
+  },
+  {
+    title: "How long do I have to return my chair?",
+    text:
+      "Pariatur recusandae dignissimos fuga voluptas unde optio nesciunt commodi beatae, explicabo natus."
+  },
+  {
+    title: "Do you ship to countries outside the EU?",
+    text:
+      "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!"
+  }
+];
 
 
 function Header() {
@@ -100,6 +120,8 @@ function App() {
             {pizzaData.map((val) => <Pizza name={val} />)}
             <ul className='ulClass'>{questions.map((data)=> <FlashCard data={data}/>)}</ul>
            <Connector />
+           <div className='parent'>{faqs.map((data,i)=><Accordion index={i} val={data}/> )}</div>
+           <FriendList />
           </div>
       </div>
     </div>
